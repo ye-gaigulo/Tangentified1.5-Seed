@@ -1,8 +1,8 @@
 import 'angular-mocks';
 import controller from './logout.controller';
 
-describe('some test', () => {
-    it('should expect something', function() {
+describe('Logout Controller', () => {
+    it('expect the controller to be defined', function() {
         expect(controller).toBeDefined();
     });
 });
