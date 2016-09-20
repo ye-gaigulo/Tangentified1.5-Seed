@@ -1,11 +1,14 @@
 language: node_js
 node_js:
-  - '0.10'
+- '0.10'
 env:
   global:
-  - CODECLIMATE_REPO_TOKEN=69562e05122e058421feef0b8086084d1474d2a5afe735db13ec90314af91ece codeclimate-test-reporter < coverage/**/lcov.info
+  - CODECLIMATE_REPO_TOKEN=69562e05122e058421feef0b8086084d1474d2a5afe735db13ec90314af91ece
+    codeclimate-test-reporter < coverage/**/lcov.info
+  - secure: jmKA0Dow8tzaJCm6yj9w+n/AMTbuvNpINfJP1h2IjPKjsG/T+HwPAJGIwA5uXWMnyz3qhCdP1SvFflzUZn+uzzdk+8w59CeE7z5G/Ri3ZEEoJ8KuucWqtjk3tVqODhLJX0ZXniY3KRbK6V/gkOs6VGQcTzoWY6DujaOXuXFwNmSK14XtBmJ/nC9n0uqVsmPYlhq9UgRetAHmWCcyH12mRK4H0xoECb0pnNfzceEbtZ0DWEqGMPeFFW2itbnIiCzK5cl7p+svJSJQt8nMnQ4z6Nhf7I/b6e52SgCA25KiVNantoaqRJ3vfaOHieVcBKFjg5fyW3Qnbe3driyr7ZBUWYDtx+EKzJzWPgY73A1mGbdox7KmLETSlpSibLSTBoeTfVzHvEhsPfyJ5bA1Cky/WO7hjDf25gUjUDps1en+HhkAnkjTAtWSlojC6igynoLriCElLXGKiL5UNywGTJVL77id+vTgmMLZN1nSHTZDGxH3DHLvsoyN7eqhC+yt1h2zo9yTdshkzoQhW1eLO+R/Ilr/ERTFkkxhuRNn2kslgfnkhcyu3ud50HZ6LzB0jgT6XZmRCXE/U/Np4bsuOBZELKBumHx1HFis64UKXSf+3dk8u6m7mgXNTwyuD+ypIqUt+M4nWfOtis5bx+eCC67nXCbOxXhlBqFhrFw1EUyH61s=
 before_script:
-  - npm install -g jspm
-  - jspm install
+- npm install -g jspm
+- jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+- jspm install
 after_script:
-  - codeclimate-test-reporter < coverage/**/lcov.info
+- codeclimate-test-reporter < coverage/**/lcov.info
