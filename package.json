@@ -13,7 +13,7 @@
     "AngularJS",
     "ES6"
   ],
-  "author": "Ernest Gaigulo <ernest@tangentsolutions.co.za>",
+  "author": "Francois Venter <francois@tangentsolutions.co.za>",
   "jspm": {
     "directories": {
       "baseURL": "src"
