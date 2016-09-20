@@ -22,4 +22,3 @@ ratings:
 exclude_paths:
 - test/
 - Gruntfile.js
-- src/config.js
