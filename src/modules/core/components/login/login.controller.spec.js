@@ -1,8 +1,8 @@
 import 'angular-mocks';
 import controller from './login.controller';
 
-describe('some test', () => {
-    it('should expect something', function () {
+describe('Login Controller', () => {
+    it('expect the login controller to be defined', function () {
         expect(controller).toBeDefined();
     });
 });
