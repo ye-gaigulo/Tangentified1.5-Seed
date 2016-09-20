@@ -5,8 +5,7 @@ engines:
     enabled: true
     config:
       languages:
-        javascript
-          mass_threshold: 20
+      - javascript
   eslint:
     enabled: true
   fixme:
@@ -21,6 +20,6 @@ ratings:
   - "**.py"
   - "**.rb"
 exclude_paths:
-  - test/
-  - Gruntfile.js
-  - src/config.js
+- test/
+- Gruntfile.js
+- src/config.js
