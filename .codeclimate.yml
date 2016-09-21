@@ -19,3 +19,4 @@ ratings:
 exclude_paths:
 - test/
 - gulpfile.js
+- src/config.js
