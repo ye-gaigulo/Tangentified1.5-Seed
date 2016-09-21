@@ -11,3 +11,5 @@ class LogoutController {
         this.$state.go('login');
     }
 }
+
+export default LogoutController;
