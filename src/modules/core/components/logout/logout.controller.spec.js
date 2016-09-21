@@ -6,3 +6,5 @@ describe('Logout Controller', () => {
         expect(controller).toBeDefined();
     });
 });
+
+// define proper tests

@@ -3,24 +3,19 @@ languages:
 engines:
   duplication:
     enabled: true
+    exclude_fingerprints:
+    - 916e9096e28652310c90a83ecdfc1056 #gulpfile.js gulp.src.pipe(eslint.failAfterError());
+    - 916e9096e28652310c90a83ecdfc1056 #gulpfile.js gulp.src.pipe(reload());
     config:
       languages:
       - javascript
-          mass_threshold: 20
   eslint:
     enabled: true
   fixme:
     enabled: true
 ratings:
   paths:
-  - "**.inc"
   - "**.js"
-  - "**.jsx"
-  - "**.module"
-  - "**.php"
-  - "**.py"
-  - "**.rb"
 exclude_paths:
-  - test/
-  - Gruntfile.js
-  - src/config.js
+- test/
+- gulpfile.js
